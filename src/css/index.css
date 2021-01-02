@@ -34,7 +34,6 @@ html, body {
 }
 
 #instruction {
-  width: 80%;
   height: 60px;
   display: flex;
   align-items: center;
