@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Ubuntu+Mono:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Exo', sans-serif;
+}
+
+html, body {
+  height: 100%
+}
+
+.header {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(222, 59%, 17%);
+}
+
+/* Helper classes */
+.white {
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#title {
+  font-size: 32px;
+  font-family: 'Ubuntu Mono', monospace;
+}
+
+#instruction {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  text-align: center;
+  background: hsl(222, 59%, 26%);
+}
+
+#gameboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#scoreboard {
+  display: inline-block;
+  margin: 30px auto;
+  color: rgb(0, 0, 0, 70%);
+  text-align: center;
+}
+
+#scoreboard > span {
+  margin: 0 10px;
+}
+
+#card-picker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 250px;
+  position: relative;
+  top: 0;
+  margin-bottom: 30px;
+  transition: all 250ms ease-out;
+  cursor: pointer;
+}
+
+.card:hover {
+  top: -10px;
+}
+
+.card-image {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: hsl(0, 0%, 95%);
+  border-radius: 5%;
+}
+
+.card-image > img {
+  display: block;
+  width: 80%;
+  height: 80%;
+}
+
+.card-id-name {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-name {
+  flex-basis: 60%;
+  color: hsl(0, 0%, 19%);
+  font-size: 20px;
+  text-align: left;
+}
+
+.card-id {
+  flex-basis: 40%;
+  color: hsl(0, 0%, 19%);
+  font-size: 16px;
+  text-align: right;
+}
+
+.card-types {
+  margin: 15px 0;
+}
+
+.card-types > span{
+  width: 100px;
+  margin-right: 10px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: white;
+  font-size: 18px;
+}
+
+.bug {
+  background: linear-gradient(180deg, #729f3f 50%, #729f3f 50%);
+}
+
+.dragon {
+  background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+}
+
+.fairy {
+  background: linear-gradient(180deg, #fdb9e9 50%, #fdb9e9 50%);  
+}
+
+.fire {
+  background: linear-gradient(180deg, #fd7d24 50%, #fd7d24 50%);
+}
+
+.ghost {
+  background: linear-gradient(180deg, #7b62a3 50%, #7b62a3 50%);
+}
+
+.ground {
+  background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+}
+
+.normal {
+  background: linear-gradient(180deg, #a4acaf 50%, #a4acaf 50%);
+}
+
+.psychic {
+  background: linear-gradient(180deg, #f366b9 50%, #f366b9 50%);
+}
+
+.steel {
+  background: linear-gradient(180deg, #9eb7b8 50%, #9eb7b8 50%);
+}
+
+.dark {
+  background: linear-gradient(180deg, #707070 50%, #707070 50%);
+}
+
+.electric {
+  background: linear-gradient(180deg, #eed535 50%, #eed535 50%);
+}
+
+.fighting {
+  background: linear-gradient(180deg, #d56723 50%, #d56723 50%);
+}
+
+.flying {
+  background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+}
+
+.grass {
+  background: linear-gradient(180deg, #9bcc50 50%, #9bcc50 50%);
+}
+
+.ice {
+  background: linear-gradient(180deg, #51c4e7 50%, #51c4e7 50%);
+}
+
+.poison {
+  background: linear-gradient(180deg, #b97fc9 50%, #b97fc9 50%);
+}
+
+.rock {
+  background: linear-gradient(180deg, #a38c21 50%, #a38c21 50%);
+}
+
+.water {
+  background: linear-gradient(180deg, #4592c4 50%, #4592c4 50%);
+}
+
+
