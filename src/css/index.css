@@ -44,6 +44,10 @@ html, body {
   background: hsl(222, 59%, 26%);
 }
 
+#instruction > p{
+  width: 80%;
+}
+
 #gameboard {
   display: flex;
   flex-direction: column;
