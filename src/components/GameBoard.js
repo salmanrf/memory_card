@@ -16,12 +16,13 @@ const GameBoard = (props) => {
                 setTopScore(parseInt(localStorage.getItem("topScore")));
             }
             setCurrentScore(0);
+            setRandomPokes(generateRandoms(8, 700));    
         }
         else {
             setMemory([...memory, pokeId]);
             setCurrentScore(currentScore + 1);  
+            setRandomPokes(newBoard(memory, randomPokes));
         }
-        setRandomPokes(newBoard(memory, randomPokes));
     }
 
     return (
